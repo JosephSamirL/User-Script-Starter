@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
+const [number, setNumber] = useState(1)
   return (
     <div className="App">
+      <button onClick={()=>{setNumber(number+1)}}>Click Me {number}</button>
       <header className="App-header">
         <p>
           Edit <code>src/App.js</code> and save. Then, refresh the page.

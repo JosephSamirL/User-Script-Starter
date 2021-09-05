@@ -12,7 +12,8 @@ log("React script has successfully started");
 async function main() {
     // Find <body/>. This can be any element. We wait until
     // the page has loaded enough for that element to exist.
-    const body = await awaitElement("#viewport");
+    // change the await element value to append to different places 
+    const body = await awaitElement("#page");
     const container = document.createElement("div");
     body.appendChild(container);
     ReactDOM.render(<App />, container);
@@ -26,3 +27,4 @@ addLocationChangeCallback(() => {
         log(e);
     });
 });
+console.log("hello")
