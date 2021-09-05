@@ -13,7 +13,7 @@ async function main() {
     // Find <body/>. This can be any element. We wait until
     // the page has loaded enough for that element to exist.
     // change the await element value to append to different places 
-    const body = await awaitElement("#page");
+    const body = await awaitElement(".fp_prods");
     const container = document.createElement("div");
     body.appendChild(container);
     ReactDOM.render(<App />, container);
